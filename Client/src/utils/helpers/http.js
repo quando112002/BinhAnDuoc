@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: 'https://datn-quanlinhathuoc.onrender.com/api/v1',
+  baseURL: 'https://binhanduoc.onrender.com/api/v1/product',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
