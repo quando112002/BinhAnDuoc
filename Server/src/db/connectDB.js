@@ -7,6 +7,7 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
+    console.log('🔍 MongoDB_URL:',process.env.MONGODB_URL);
     console.log('✅ Đã kết nối tới MongoDB Atlas');
   } catch (error) {
     console.error('❌ Lỗi kết nối MongoDB:', error.message);
