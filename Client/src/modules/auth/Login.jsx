@@ -10,6 +10,9 @@ import { Button } from "../../components/ui/button";
 import Logo from '../../assets/images/logo/logo.png'
 import { ToggleFormContext } from "../../contexts/ToggleFormContext";
 import AppIcons from '../../components/ui/icon/index'
+import LogoGoogle from '../../assets/images/logo/LogoGoogle.png'
+
+
 const Login = () => {
   const { fetchUser } = useContext(UserContext);
   const [showPassword, setShowPassword] = useState(false);
@@ -94,7 +97,7 @@ const Login = () => {
                   className="w-full h-11 md:h-12 text-sm inline-flex items-center justify-center my-2 text-gray-700 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-300 duration-150"
                 >
                   <img
-                    src="https://img-cache.coccoc.com/image2?i=2&l=84/93650057"
+                    src={LogoGoogle}
                     alt="Google logo"
                     className="w-5 h-5 mr-2"
                   />
